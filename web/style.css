@@ -1,0 +1,57 @@
+body{font-family:Arial;background:#f4f4f4;padding:18px}
+.wrap{max-width:520px;margin:auto;text-align:center}
+.card{background:#fff;padding:16px;border-radius:14px;box-shadow:0 4px 10px rgba(0,0,0,.08)}
+.row{display:flex;gap:10px;margin-top:10px}
+.row>*{flex:1}
+.btn{padding:14px;border:0;border-radius:12px;font-size:16px;color:#fff;cursor:pointer;width:100%}
+
+.ac3{background:#4ecdc4}
+.ac2{background:#45aaf2}
+.light{background:#f7b731}
+
+.heat{background:#ff6b6b}
+.cool{background:#4ecdc4}
+.pwr{background:#2d98da}
+.off{background:#778ca3}
+.fan{background:#a55eea}
+
+.topModes .btn{
+  padding:16px;
+  font-size:16px;
+}
+
+.back{text-decoration:none;color:#333;float:left;font-weight:700}
+.clearfix{clear:both}
+
+.tempBox{margin:14px auto;width:220px;background:#f8f8ff;border-radius:14px;padding:14px}
+.arrow{width:100%;font-size:22px;padding:12px}
+.tempVal{font-size:44px;font-weight:700;margin:8px 0}
+
+.small{color:#666;font-size:13px;text-align:left;margin-top:8px}
+#msg{margin-top:10px;color:#333;text-align:left}
+input{padding:12px;border-radius:10px;border:1px solid #ddd;width:100%;font-size:16px}
+
+.timerBox{margin-top:12px;text-align:left}
+
+.toast{margin-top:10px;color:#333;text-align:left;min-height:18px}
+
+.homeBtns .btn{
+  margin-top:14px;
+  padding:18px;
+  font-size:18px;
+}
+.homeBtns .btn:first-child{
+  margin-top:10px;
+}
+
+.lightBtns .btn{
+  width:100%;
+  margin-top:14px;
+  padding:18px;
+  font-size:20px;
+  border-radius:14px;
+}
+
+.lightBtns .btn.on{background:#f7b731}
+.lightBtns .btn.night{background:#a55eea}
+.lightBtns .btn.off{background:#778ca3}

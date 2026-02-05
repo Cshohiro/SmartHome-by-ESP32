@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>スマートホーム</title>
+  <link rel="icon" href="/favicon.ico?v=2">
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h2>機器を選択</h2>
+      <div class="homeBtns">
+        <button class="btn ac3" onclick="location.href='/ac3.html'">3F エアコン</button>
+        <button class="btn ac2" onclick="location.href='/ac2.html'">2F エアコン（未対応）</button>
+        <button class="btn light" onclick="location.href='/light.html'">照明</button>
+      </div>
+
+      <div class="small">同一WiFiネットワークに接続して利用してください</div>
+      <div id="toast" class="toast"></div>
+    </div>
+  </div>
+
+  <script src="/app.js"></script>
+</body>
+</html>

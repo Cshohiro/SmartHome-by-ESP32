@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>3F エアコン</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <a class="back" href="/index.html">← 戻る</a><div class="clearfix"></div>
+      <h2>3F エアコン</h2>
+
+      <div class="small" id="state">読み込み中...</div>
+
+      <div class="row topModes">
+        <button class="btn heat" onclick="ac_mode('heat')">暖房</button>
+        <button class="btn cool" onclick="ac_mode('cool')">冷房</button>
+        <button class="btn off"  onclick="ac_powerOff()">停止</button>
+      </div>
+
+      <div class="tempBox">
+        <button class="btn pwr arrow" onclick="ac_tempStep(+0.5)">▲</button>
+        <div class="tempVal"><span id="temp">--</span>℃</div>
+        <button class="btn pwr arrow" onclick="ac_tempStep(-0.5)">▼</button>
+      </div>
+
+      <div class="row">
+        <button class="btn fan" onclick="ac_fan('auto')">自動</button>
+        <button class="btn fan" onclick="ac_fan('quiet')">静音</button>
+      </div>
+      <div class="row">
+        <button class="btn fan" onclick="ac_fan('1')">1</button>
+        <button class="btn fan" onclick="ac_fan('2')">2</button>
+        <button class="btn fan" onclick="ac_fan('3')">3</button>
+      </div>
+      <div class="row">
+        <button class="btn fan" onclick="ac_fan('4')">4</button>
+        <button class="btn fan" onclick="ac_fan('5')">5</button>
+      </div>
+
+      <div class="timerBox">
+        <div class="small">オフタイマー（分）：</div>
+        <div class="row">
+          <input id="mins" type="number" min="1" placeholder="例：30" />
+          <button class="btn pwr" onclick="ac_setTimer()">開始</button>
+        </div>
+        <div class="row">
+          <button class="btn off" onclick="ac_cancelTimer()">タイマー取消</button>
+        </div>
+        <div class="small">残り：<span id="left">--</span></div>
+      </div>
+
+      <div id="msg">状態：待機中</div>
+    </div>
+  </div>
+
+  <script src="/app.js"></script>
+</body>
+</html>
