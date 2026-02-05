@@ -2,6 +2,11 @@
 ESP32を用いた赤外線家電制御対応のスマートホームIoTシステム
 エアコンと照明の制御が可能。
 
+## ドキュメント
+- システム構成: [docs/system_overview.md](docs/system_overview.md)
+- API仕様: [docs/api_spec.md](docs/api_spec.md)
+- ハードウェア: [hardware/wiring.md](hardware/wiring.md)
+
 # システム構成
 - ESP32：メイン制御およびWiFi通信
 - 赤外線送信モジュール：家電への信号送信
