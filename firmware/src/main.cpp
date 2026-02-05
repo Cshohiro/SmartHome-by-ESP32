@@ -8,8 +8,8 @@
 /* ===== 基本設定 =====
  * WiFi（固定IP）と WebServer の基本設定
  */
-const char* ssid = "F2886Q-tNq2-G_EXT";
-const char* pass = "Ckz9QP7hyc4Ht";
+const char* ssid = "F2.....EXT"; //省略
+const char* pass = "....";　//省略
 
 IPAddress local_IP(192,168,1,240);
 IPAddress gateway(192,168,1,1);
@@ -401,3 +401,4 @@ void loop() {
   }
   server.handleClient();
 }
+
